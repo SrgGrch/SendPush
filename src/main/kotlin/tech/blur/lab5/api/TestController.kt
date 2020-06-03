@@ -22,11 +22,7 @@ class TestController @Autowired constructor(
     ): String {
         val message: Message = Message.builder()
                 .putData("revive", "true")
-                .setAndroidConfig(
-                        AndroidConfig.builder()
-                                .setPriority(AndroidConfig.Priority.HIGH)
-                                .build()
-                )
+
                 .setToken(token)
                 .build()
 
