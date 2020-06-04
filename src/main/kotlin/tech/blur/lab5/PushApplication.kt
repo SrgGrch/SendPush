@@ -5,8 +5,10 @@ import com.google.firebase.FirebaseApp
 import com.google.firebase.FirebaseOptions
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.scheduling.annotation.EnableScheduling
 
 @SpringBootApplication
+@EnableScheduling
 class PushApplication
 
 fun main(args: Array<String>) {

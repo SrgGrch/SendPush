@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Отправить пуш</title>
 </head>
 <body>
 
 <form action="/push/send" method="get">
-    <input id="token" name="token">
+    <label for="token">Token: </label><input id="token" name="token">
     <br>
+    <label for="delay">Interval (minutes): </label><input id="delay" name="delay" value="5">
     <br>
     <button type="submit">
         Send
